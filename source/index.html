@@ -1,13 +1,32 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Стартовый шаблон</title>
-  <link rel="stylesheet" href="css/style.css">
+  <title>Smart Device</title>
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
-  <h1>Добро пожаловать в Лигу А.</h1>
+  <div class="header-wrapper">
+    <header class="header">
+      <div class="logo header__logo">
+        <img class="logo__image" src="img/logo.png" alt="logo" width="52" height="52">
+        <div class="logo__container">
+          <p class="logo__brand">Smart Device</p>
+          <span class="logo__slogan">умные технологии</span>
+        </div>
+      </div>
+      <nav class="nav header__nav"></nav>
+      <a class="header__email" href="mailto:info@sd.ru">
+        <b>info@sd.ru</b>
+        <span class="visually-hidden">email</span>
+      </a>
+      <a class="header__tell" href="tel:+74950005252">
+        <b>+7 (495) 000 52 52</b>
+        <span class="visually-hidden">Позвонить</span>
+      </a>
+      <a class="button header__order-call" href="#">Заказать звонок</a>
+    </header>
+  </div>
 </body>
 </html>

@@ -1,0 +1,31 @@
+.nav {
+  position: relative;
+
+  min-width: 37px;
+  min-height: 45px;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 20px;
+    left: 0;
+
+    width: 37px;
+    height: 1px;
+
+    background-color: #ffffff;
+    box-shadow: 0 12px 0 0 #ffffff;
+  }
+
+  &:hover::before,
+  &:focus::before {
+    opacity: 0.6;
+  }
+
+  &:active::before {
+    opacity: 0.3;
+  }
+
+  cursor: pointer;
+}
