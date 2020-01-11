@@ -1,0 +1,42 @@
+.main-screen {
+  display: flex;
+  margin: 0 auto;
+  max-width: 1425px;
+}
+
+.main-screen__title {
+  @include font-bold(80px, 64px);
+
+  padding-left: 10px;
+
+  font-family: "Roboto Condensed", "Arial", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.07em;
+  color: #ffffff;
+}
+
+.main__screen__services {
+  @include font(22px, 34px);
+
+  position: relative;
+
+  font-family: "PT Mono", "Arial", sans-serif;
+  color: #ffffff;
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    width: 33px;
+    height: 2px;
+
+    background: #ffffff;
+  }
+}
+
+.main-screen__image {
+  display: block;
+}

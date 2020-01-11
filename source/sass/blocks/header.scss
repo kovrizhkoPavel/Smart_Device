@@ -8,6 +8,7 @@
 .header {
   max-width: 1425px;
   margin: 0 auto;
+  margin-bottom: 245px;
   padding-top: 33px;
   display: flex;
   flex-wrap: wrap;
@@ -35,7 +36,7 @@
   display: block;
   padding-top: 17px;
 
-  font-family: "PT Mono", Arial, sans-serif;
+  font-family: "PT Mono", "Arial", sans-serif;
   color: #ffffff;
 
   &::before {
@@ -71,7 +72,7 @@
   margin-left: 8.5%;
   padding-top: 17px;
 
-  font-family: "PT Mono", Arial, sans-serif;
+  font-family: "PT Mono", "Arial", sans-serif;
   color: #ffffff;
 
   &::before {
@@ -108,7 +109,6 @@
 }
 
 @media (max-width: $tablet-width) {
-
   .header__email b,
   .header__tell b,
   .header__order-call {

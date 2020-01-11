@@ -1,7 +1,6 @@
 @font-face {
   font-family: "PT Mono";
-  src: url("../fonts/pt-mono-v7-cyrillic_latin-regular.woff2") format("woff2"),
-       url("../fonts/pt-mono-v7-cyrillic_latin-regular.woff2") format("woff");
+  src: url("../fonts/pt-mono-v7-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/pt-mono-v7-cyrillic_latin-regular.woff2") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -9,8 +8,7 @@
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("../fonts/roboto-condensed-v18-cyrillic_latin-regular.woff2") format("woff2"),
-       url("../fonts/roboto-condensed-v18-cyrillic_latin-regular.woff") format("woff");
+  src: url("../fonts/roboto-condensed-v18-cyrillic_latin-regular.woff2") format("woff2"), url("../fonts/roboto-condensed-v18-cyrillic_latin-regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -18,8 +16,7 @@
 
 @font-face {
   font-family: "Roboto Condensed";
-  src: url("../fonts/roboto-condensed-v18-cyrillic_latin-700.woff2") format("woff2"),
-       url("../fonts/roboto-condensed-v18-cyrillic_latin-700.woff") format("woff");
+  src: url("../fonts/roboto-condensed-v18-cyrillic_latin-700.woff2") format("woff2"), url("../fonts/roboto-condensed-v18-cyrillic_latin-700.woff") format("woff");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
