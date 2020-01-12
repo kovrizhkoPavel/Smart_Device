@@ -1,12 +1,5 @@
-.header-wrapper {
-  height: 878px;
-
-  background-color: $gray--dark;
-  background-image: url("../../img/black-ocen-desktop@1x.png");
-}
-
 .header {
-  max-width: 1425px;
+  max-width: 1435px;
   margin: 0 auto;
   margin-bottom: 245px;
   padding-top: 33px;
@@ -15,7 +8,7 @@
 }
 
 .header__logo {
-  padding-left: 14px;
+  padding-left: 20px;
 }
 
 .header__nav {
@@ -69,7 +62,7 @@
   position: relative;
 
   display: block;
-  margin-left: 8.5%;
+  margin-left: 8.3%;
   padding-top: 17px;
 
   font-family: "PT Mono", "Arial", sans-serif;
@@ -100,9 +93,10 @@
 }
 
 .header__order-call {
-  margin-left: 3.5%;
+  margin-left: 3.3%;
   margin-top: 3px;
-  padding: 15px 25px;
+  margin-right: 10px;
+  padding: 15px 26px;
 
   color: #ffffff;
   border-color: #ffffff;

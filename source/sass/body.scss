@@ -1,6 +1,5 @@
 html {
   box-sizing: border-box;
-  //min-height: 3000px;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -29,4 +28,11 @@ img {
 
 a {
   text-decoration: none;
+}
+
+.header-wrapper {
+  height: 878px;
+
+  background-color: $gray--dark;
+  background-image: url("../img/black-ocen-desktop@1x.png");
 }
