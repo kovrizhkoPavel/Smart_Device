@@ -10,7 +10,7 @@
   <div class="header-wrapper">
     <header class="header">
       <div class="logo header__logo">
-        <img class="logo__image" src="img/circuit (1).svg" alt="logo" width="52" height="52">
+        <img class="logo__image" src="img/logo.svg" alt="logo" width="52" height="52">
         <div class="logo__container">
           <p class="logo__brand">Smart Device</p>
           <span class="logo__slogan">умные технологии</span>
@@ -35,18 +35,22 @@
           <span class="main-screen__text">
             Получить бесплатную консультацию
           </span>
-          <span class="main-screen__text main-screen__text--modile">
-            Получить бесплатную консультацию
+          <span class="main-screen__text main-screen__text--mobile">
+            Бесплатная консультация
           </span>
         </a>
       </div>
       <div class="main-screen__image">
         <picture>
+          <source type="image/webp" media="(min-width: 1024px)" srcset="img/untitled-desktop@1x.webp 1x, img/untitled-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/untitled-tablet@1x.webp 1x, img/untitled-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/untitled-mobile@1x.webp 1x, img/untitled-mobile@2x.webp 2x">
           <source media="(min-width: 1024px)" srcset="img/untitled-desktop@1x.png 1x, img/untitled-desktop@2x.png 2x">
           <source media="(min-width: 768px)" srcset="img/untitled-tablet@1x.png 1x, img/untitled-tablet@2x.png 2x">
           <img src="img/untitled-mobile@1x.png" srcset="img/untitled-mobile@2x.png 2x" width="301" height="220" alt="Печатные платы">
         </picture>
       </div>
+      <button class="main-screen__scroll">Скролл вниз</button>
     </div>
   </div>
 </body>

@@ -2,6 +2,10 @@ html {
   box-sizing: border-box;
 }
 
+body {
+  min-height: 3000px;
+}
+
 .visually-hidden:not(:focus):not(:active),
 input[type="radio"],
 input[type="checkbox"] {

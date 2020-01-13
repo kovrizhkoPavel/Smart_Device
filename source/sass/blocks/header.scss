@@ -1,7 +1,7 @@
 .header {
-  max-width: 1435px;
+  max-width: 1440px;
   margin: 0 auto;
-  margin-bottom: 245px;
+  margin-bottom: 191px;
   padding-top: 33px;
   display: flex;
   flex-wrap: wrap;
@@ -22,14 +22,15 @@
 }
 
 .header__email {
-  @include font;
-
   position: relative;
 
   display: block;
   padding-top: 17px;
 
-  font-family: "PT Mono", "Arial", sans-serif;
+  font-family: $mono;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
   color: #ffffff;
 
   &::before {
@@ -57,15 +58,16 @@
 }
 
 .header__tell {
-  @include font;
-
   position: relative;
 
   display: block;
   margin-left: 8.3%;
   padding-top: 17px;
 
-  font-family: "PT Mono", "Arial", sans-serif;
+  font-family: $mono;
+  font-size: 16px;
+  line-height: 18px;
+  font-weight: normal;
   color: #ffffff;
 
   &::before {
@@ -111,6 +113,7 @@
 
   .header {
     padding-top: 20px;
+    margin-bottom: 76px;
   }
 
   .header__logo {
@@ -156,6 +159,7 @@
   }
 
   .header {
+    margin-bottom: 38px;
     padding-top: 17px;
   }
 
@@ -164,21 +168,21 @@
   }
 
   .header__nav {
-    margin-right: 24%;
+    margin-right: 28%;
     margin-top: -10px;
   }
 
   .header__email {
     &::before {
       top: 9px;
-      left: -45px;
+      left: -61px;
     }
   }
 
   .header__tell {
     &::before {
       top: 6px;
-      left: -22px;
+      left: -39px;
 
       width: 23px;
       height: 23px;

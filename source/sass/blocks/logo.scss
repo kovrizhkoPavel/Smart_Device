@@ -14,19 +14,21 @@
 }
 
 .logo__brand {
-  @include font-bold(25px, 29px);
-
   margin: 0;
   margin-top: 6px;
 
-  font-family: "Roboto Condensed", "Arial", sans-serif;
+  font-family: $roboto;
+  font-size: 25px;
+  line-height: 29px;
+  font-weight: bold;
   color: #ffffff;
 }
 
 .logo__slogan {
-  @include font(12px, 14px);
-
-  font-family: "Roboto", "Arial", sans-serif;
+  font-family: $roboto;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: normal;
   color: #788891;
 }
 
