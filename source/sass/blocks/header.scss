@@ -1,7 +1,7 @@
 .header {
   max-width: 1440px;
   margin: 0 auto;
-  margin-bottom: 191px;
+  margin-bottom: 167px;
   padding-top: 33px;
   display: flex;
   flex-wrap: wrap;
@@ -9,6 +9,11 @@
 
 .header__logo {
   padding-left: 20px;
+
+  & img {
+    width: 202px;
+    height: 52px;
+  }
 }
 
 .header__nav {
@@ -95,6 +100,7 @@
 }
 
 .header__order-call {
+  height: 45px;
   margin-left: 3.3%;
   margin-top: 3px;
   margin-right: 10px;
@@ -113,7 +119,7 @@
 
   .header {
     padding-top: 20px;
-    margin-bottom: 76px;
+    margin-bottom: 53px;
   }
 
   .header__logo {
@@ -141,9 +147,11 @@
   }
 
   .header__tell {
+    margin-left: 10.5%;
+    
     &::before {
       top: 13px;
-      left: -30px;
+      left: -46px;
 
       width: 23px;
       height: 23px;
@@ -154,28 +162,29 @@
 }
 
 @media (max-width: $mobile-width) {
-  .header__logo .logo__container {
-    display: none;
-  }
-
   .header {
-    margin-bottom: 38px;
+    margin-bottom: 34px;
     padding-top: 17px;
   }
 
   .header__logo {
     padding-left: 17px;
+
+    & img {
+      width: 38px;
+      height: 38px;
+    }
   }
 
   .header__nav {
-    margin-right: 28%;
+    margin-right: 25%;
     margin-top: -10px;
   }
 
   .header__email {
     &::before {
       top: 9px;
-      left: -61px;
+      left: -54px;
     }
   }
 

@@ -4,7 +4,9 @@
   display: flex;
   margin: 0 auto;
   padding-left: 34px;
+  padding-top: 20px;
   max-width: 1440px;
+  min-height: 600px;
 }
 
 .main-screen__container {
@@ -28,6 +30,7 @@
 
   margin-bottom: 45px;
   padding-left: 99px;
+  padding-right: 10px;
   margin-right: 10px;
 
   font-family: $mono;
@@ -81,14 +84,15 @@
 .main-screen__image {
   position: absolute;
 
-  width: 49%;
-  right: -4.9%;
-  top: -20px;
+  width: 48%;
+  right: -3.9%;
+  top: 0;
   display: block;
 
-  background-image: url("../../img/polygons.png");
-  background-size: 100%;
-  background-position: 0 0;
+  background-image: url("../img/polygons.svg");
+  background-size: 95%;
+  background-position: -21% 115%;
+  background-repeat: no-repeat;
 }
 
 .main-screen__scroll {
@@ -117,12 +121,12 @@
   }
 }
 
-@media (max-width: $main-screen__image) {
-  .main-screen__image {
-    right: 0;
-    width: 47%;
-  }
-}
+// @media (max-width: $main-screen__image) {
+//   .main-screen__image {
+//     right: 0;
+//     width: 47%;
+//   }
+// }
 
 @media (max-width: $tablet-width) {
   .main-screen {
@@ -167,19 +171,29 @@
   }
 
   .main-screen__image {
-    right: -2.9%;
-    top: -37px;
+    right: 0;
+    top: -50px;
 
-    width: 35%;
+    width: 41%;
+    height: 64%;
+
+    background-size: 526px;
+    background-position: -13px -116px;
+
+    & img {
+      display: block;
+      width: 82%;
+      margin-left: auto;
+      margin-top: 36px;
+    }
   }
 }
 
 @media (max-width: $mobile-width) {
   .main-screen {
-    flex-direction: column;
-
     padding-left: 15px;
     padding-right: 15px;
+    padding-top: 217px;
   }
 
   .main-screen__container {
@@ -189,7 +203,7 @@
   }
 
   .main-screen__title {
-    margin-top: -28px;
+    margin-top: -24px;
     font-size: 40px;
     line-height: 47px;
   }
@@ -222,12 +236,22 @@
   }
 
   .main-screen__image {
-    position: static;
+    top: -30px;
 
-    width: 100%;
+    width: 92%;
+    max-width: 400px;
+    height: 50%;
     margin: 0 auto;
     margin-left: 4%;
 
     order: -1;
+
+    background-size: 504px;
+    background-position: 126px -108px;
+
+    & img {
+      width: 100%;
+      margin-top: 30px;
+    }
   }
 }

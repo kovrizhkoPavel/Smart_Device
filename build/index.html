@@ -9,12 +9,11 @@
 <body>
   <div class="header-wrapper">
     <header class="header">
-      <div class="logo header__logo">
-        <img class="logo__image" src="img/logo.svg" alt="logo" width="52" height="52">
-        <div class="logo__container">
-          <p class="logo__brand">Smart Device</p>
-          <span class="logo__slogan">умные технологии</span>
-        </div>
+      <div class="header__logo">
+        <picture>
+          <source media="(min-width: 768px)" srcset="img/logo-desktop.svg">
+          <img src="img/logo-mobile.svg" alt="Smart device" width="38" height="38">
+        </picture>
       </div>
       <nav class="nav header__nav"></nav>
       <a class="header__email" href="mailto:info@sd.ru">

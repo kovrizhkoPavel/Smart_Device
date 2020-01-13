@@ -37,8 +37,10 @@ a {
 .header-wrapper {
   position: relative;
 
-  height: 878px;
+  min-height: 878px;
 
   background-color: $gray--dark;
   background-image: url("../img/black-ocen-desktop@1x.png");
+
+  overflow: hidden;
 }
