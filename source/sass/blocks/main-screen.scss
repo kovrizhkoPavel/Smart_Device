@@ -28,7 +28,7 @@
 
   margin-bottom: 45px;
   padding-left: 99px;
-  margin-right: 10px;;
+  margin-right: 10px;
 
   font-family: $mono;
   font-size: 22px;
@@ -83,9 +83,12 @@
 
   width: 49%;
   right: -4.9%;
-  height: 300px;
   top: -20px;
   display: block;
+
+  background-image: url("../../img/polygons.png");
+  background-size: 100%;
+  background-position: 0 0;
 }
 
 .main-screen__scroll {
@@ -111,6 +114,13 @@
 
   &:active {
     opacity: 0.3;
+  }
+}
+
+@media (max-width: $main-screen__image) {
+  .main-screen__image {
+    right: 0;
+    width: 47%;
   }
 }
 
