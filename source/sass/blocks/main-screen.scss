@@ -97,7 +97,7 @@
 
 .main-screen__scroll {
   position: absolute;
-  bottom: -150px;
+  bottom: 125px;
   left: -6px;
 
   font-family: $mono;
@@ -120,13 +120,6 @@
     opacity: 0.3;
   }
 }
-
-// @media (max-width: $main-screen__image) {
-//   .main-screen__image {
-//     right: 0;
-//     width: 47%;
-//   }
-// }
 
 @media (max-width: $tablet-width) {
   .main-screen {
