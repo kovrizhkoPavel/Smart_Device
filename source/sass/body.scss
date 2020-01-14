@@ -38,9 +38,24 @@ a {
   position: relative;
 
   min-height: 878px;
+  margin-bottom: 111px;
 
   background-color: $gray--dark;
   background-image: url("../img/black-ocen-desktop@1x.png");
 
   overflow-x: hidden;
+}
+
+@media (max-width: $tablet-width) {
+  .header-wrapper {
+    min-height: 680px;
+    margin-bottom: 56px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .header-wrapper {
+    min-height: 647px;
+    margin-bottom: 39px;
+  }
 }

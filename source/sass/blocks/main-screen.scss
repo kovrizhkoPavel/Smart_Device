@@ -2,11 +2,11 @@
   position: relative;
 
   display: flex;
+  max-width: 1440px;
+  min-height: 600px;
   margin: 0 auto;
   padding-left: 34px;
   padding-top: 20px;
-  max-width: 1440px;
-  min-height: 600px;
 }
 
 .main-screen__container {
@@ -123,6 +123,7 @@
 
 @media (max-width: $tablet-width) {
   .main-screen {
+    min-height: 537px;
     padding-left: 87px;
   }
 
@@ -184,6 +185,7 @@
 
 @media (max-width: $mobile-width) {
   .main-screen {
+    min-height: 337px;
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 217px;

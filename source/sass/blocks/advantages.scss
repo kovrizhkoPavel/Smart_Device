@@ -1,0 +1,167 @@
+.advantages {
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.advantages__list {
+  @include list-reset;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.advantages__item {
+  position: relative;
+
+  min-height: 299px;
+  width: 48.7%;
+  margin-bottom: 30px;
+  padding-left: 45px;
+
+  border: 1px solid #ebebeb;
+  box-sizing: border-box;
+
+  & svg {
+    position: absolute;
+    top: 40px;
+    left: 45px;
+
+    fill: $main-color;
+  }
+
+  & br {
+    display: none;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $main-color;
+  }
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 3px;
+    height: 100%;
+
+    background-color: $main-color;
+  }
+}
+
+.advantages__item:hover .advantages__title,
+.advantages__item:focus .advantages__title,
+.advantages__item:hover .advantages__text,
+.advantages__item:focus .advantages__text {
+  color: #ffffff;
+}
+
+.advantages__item:hover svg,
+.advantages__item:focus svg {
+  fill: #ffffff;
+}
+
+.advantages__title {
+  margin-top: 96px;
+  margin-bottom: 15px;
+
+  font-family: $roboto;
+  font-size: 24px;
+  font-weight: normal;
+  line-height: 34px;
+
+  color: $main-color;
+}
+
+.advantages__text {
+  padding-right: 42px;
+
+  font-family: $mono;
+  font-size: 16px;
+  line-height: 22px;
+
+  color: $gray;
+}
+
+@media (max-width: $tablet-width) {
+  .advantages__list {
+    padding: 0 25px;
+  }
+
+  .advantages__item {
+    width: 48%;
+    padding-left: 25px;
+
+    & svg {
+      top: 22px;
+      left: 27px;
+    }
+  }
+
+  .advantages__item--confidentiality svg {
+    top: 27px;
+
+    width: 30px;
+    height: 26px;
+  }
+
+  .advantages__title {
+    margin-top: 64px;
+    margin-bottom: 11px;
+  }
+
+  .advantages__text {
+    margin-top: 0;
+    padding-right: 21px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .advantages__list {
+    flex-direction: column;
+    padding: 0 4.5%;
+  }
+
+  .advantages__item {
+    width: 100%;
+    margin-bottom: 20px;
+
+    & br {
+      display: block;
+    }
+  }
+
+  .advantages__item--suppliers .advantages__text {
+    padding-right: 0;
+  }
+
+  .advantages__item--confidentiality {
+    min-height: 232px;
+
+    & .advantages__title {
+      margin-bottom: -8px;
+      margin-top: 65px;
+    }
+  }
+
+  .advantages__item--cost .advantages__text {
+    padding-right: 10px;
+  }
+
+  .advantages__title {
+    margin-top: 70px;
+    margin-bottom: 9px;
+
+    font-size: 20px;
+    line-height: 28px;
+  }
+
+  .advantages__text {
+    margin-bottom: 23px;
+    padding-right: 17px;
+  }
+}
