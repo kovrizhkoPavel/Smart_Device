@@ -53,12 +53,17 @@ a {
   background-repeat: no-repeat;
 }
 
+.products-wrapper {
+  background-color: $gray--dark;
+}
+
 @media (max-width: $tablet-width) {
   .header-wrapper {
     min-height: 680px;
   }
 
   .main-wrapper {
+    min-height: 1060px;
     padding-top: 54px;
 
     background-position: -348px -86px;
