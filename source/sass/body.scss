@@ -38,7 +38,6 @@ a {
   position: relative;
 
   min-height: 878px;
-  margin-bottom: 111px;
 
   background-color: $gray--dark;
   background-image: url("../img/black-ocen-desktop@1x.png");
@@ -46,16 +45,34 @@ a {
   overflow-x: hidden;
 }
 
+.main-wrapper {
+  padding-top: 111px;
+  min-height: 1152px;
+  background-image: url("../img/polugons-advantages.svg");
+  background-position: -8px -29px;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: $tablet-width) {
   .header-wrapper {
     min-height: 680px;
-    margin-bottom: 56px;
+  }
+
+  .main-wrapper {
+    padding-top: 54px;
+
+    background-position: -348px -86px;
   }
 }
 
 @media (max-width: $mobile-width) {
   .header-wrapper {
     min-height: 647px;
-    margin-bottom: 39px;
+  }
+
+  .main-wrapper {
+    padding-top: 36px;
+
+    background-position: -678px 476px;
   }
 }

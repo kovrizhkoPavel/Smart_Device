@@ -20,6 +20,7 @@
   padding-left: 45px;
 
   border: 1px solid #ebebeb;
+  background-color: #ffffff;
   box-sizing: border-box;
 
   & svg {
@@ -94,6 +95,8 @@
 
   .advantages__item {
     width: 48%;
+    min-height: 234px;
+    margin-bottom: 32px;
     padding-left: 25px;
 
     & svg {
@@ -126,6 +129,10 @@
     padding: 0 4.5%;
   }
 
+  .advantages__span-hidden {
+    display: none;
+  }
+
   .advantages__item {
     width: 100%;
     margin-bottom: 20px;
@@ -133,23 +140,6 @@
     & br {
       display: block;
     }
-  }
-
-  .advantages__item--suppliers p {
-    padding-right: 0;
-  }
-
-  .advantages__item--confidentiality {
-    min-height: 232px;
-
-    & .advantages__title {
-      margin-bottom: -8px;
-      margin-top: 65px;
-    }
-  }
-
-  .advantages__item--cost p {
-    padding-right: 10px;
   }
 
   .advantages__title {
@@ -163,5 +153,28 @@
   .advantages__item p {
     margin-bottom: 23px;
     padding-right: 17px;
+  }
+
+  .advantages__item--suppliers {
+    & .advantages__title {
+      margin-top: 75px;
+    }
+
+    & p {
+      padding-right: 0;
+    }
+  }
+
+  .advantages__item--confidentiality {
+    min-height: 232px;
+
+    & .advantages__title {
+      margin-bottom: -8px;
+      margin-top: 65px;
+    }
+  }
+
+  .advantages__item--cost p {
+    padding-right: 10px;
   }
 }
