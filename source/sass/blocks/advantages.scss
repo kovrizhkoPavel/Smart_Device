@@ -55,8 +55,8 @@
 
 .advantages__item:hover .advantages__title,
 .advantages__item:focus .advantages__title,
-.advantages__item:hover .advantages__text,
-.advantages__item:focus .advantages__text {
+.advantages__item:hover p,
+.advantages__item:focus p {
   color: #ffffff;
 }
 
@@ -77,7 +77,7 @@
   color: $main-color;
 }
 
-.advantages__text {
+.advantages__item p {
   padding-right: 42px;
 
   font-family: $mono;
@@ -114,7 +114,7 @@
     margin-bottom: 11px;
   }
 
-  .advantages__text {
+  .advantages__item p {
     margin-top: 0;
     padding-right: 21px;
   }
@@ -135,7 +135,7 @@
     }
   }
 
-  .advantages__item--suppliers .advantages__text {
+  .advantages__item--suppliers p {
     padding-right: 0;
   }
 
@@ -148,7 +148,7 @@
     }
   }
 
-  .advantages__item--cost .advantages__text {
+  .advantages__item--cost p {
     padding-right: 10px;
   }
 
@@ -160,7 +160,7 @@
     line-height: 28px;
   }
 
-  .advantages__text {
+  .advantages__item p {
     margin-bottom: 23px;
     padding-right: 17px;
   }
