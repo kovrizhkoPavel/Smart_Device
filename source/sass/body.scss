@@ -57,6 +57,15 @@ a {
   background-color: $gray--dark;
 }
 
+.form-wrapper {
+  min-height: 670px;
+
+  background-color: $main-color;
+  background-image: url("../img/polygons.svg"), url("../img/polygons-form.svg");
+  background-position: 13.6% -61px, 1549px 34px;
+  background-repeat: no-repeat;
+}
+
 @media (max-width: $tablet-width) {
   .header-wrapper {
     min-height: 680px;
@@ -67,6 +76,11 @@ a {
     padding-top: 54px;
 
     background-position: -348px -86px;
+  }
+
+  .form-wrapper {
+    min-height: 665px;
+    background-image: none;
   }
 }
 
@@ -79,5 +93,9 @@ a {
     padding-top: 36px;
 
     background-position: -678px 476px;
+  }
+
+  .form-wrapper {
+    min-height: 640px;
   }
 }

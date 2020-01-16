@@ -1,0 +1,243 @@
+.form-feedback {
+  max-width: 1216px;
+  margin: 0 auto;
+  padding: 0 22px;
+  padding-top: 90px;
+  box-sizing: border-box;
+
+  background-image: url("../img/paper_airplane.png");
+  background-position: -1px 160px;
+  background-repeat: no-repeat;
+}
+
+.form-feedback__wrapper {
+  width: 49%;
+  margin-left: auto;
+  color: #ffffff;
+}
+
+.form-feedback__b {
+  font-family: $roboto;
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 51px;
+}
+
+.form-feedback__text {
+  margin-top: 10px;
+  margin-bottom: 50px;
+  padding-left: 5px;
+
+  font-family: $mono;
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.form-feedback__container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 43px;
+}
+
+.form-feedback__input {
+  width: 47%;
+  min-height: 50px;
+  margin-left: 5px;
+  margin-bottom: 40px;
+  padding-left: 17px;
+  box-sizing: border-box;
+
+  font-family: $mono;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  background-color: #19baff;
+  border: none;
+}
+
+.form-feedback__input::-webkit-input-placeholder {
+  font-family: $mono;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form-feedback__input::-moz-input-placeholder {
+  font-family: $mono;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form-feedback__textarea {
+  width: 100%;
+  min-height: 143px;
+  margin-left: 5px;
+  padding-left: 17px;
+  padding-top: 10px;
+
+  font-family: $mono;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+
+  background-color: #19baff;
+  border: none;
+
+  resize: none;
+}
+
+.form-feedback__textarea::-webkit-input-placeholder {
+  font-family: $mono;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form-feedback__textarea::-moz-input-placeholder {
+  padding-top: 10px;
+
+  font-family: $mono;
+  font-size: 16px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
+.form-feedback__submit {
+  margin-left: 5px;
+  width: 47%;
+
+  color: #ffffff;
+
+  background-color: $main-color;
+  border-color: #ffffff;
+
+  &:hover,
+  &:focus {
+    color: $main-color;
+    background-color: #ffffff;
+    opacity: 1;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.form-feedback__label {
+  position: relative;
+
+  width: 46%;
+  padding-left: 35px;
+  padding-top: 8px;
+  box-sizing: border-box;
+
+  font-family: $mono;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.form-feedback__element {
+  &::before {
+    content: "";
+
+    position: absolute;
+    left: 3px;
+    top: 9px;
+
+    width: 16px;
+    height: 16px;
+    box-sizing: border-box;
+
+    border: 1px solid #ffffff;
+    cursor: pointer;
+  }
+}
+
+.form-feedback__checkbox:checked + .form-feedback__element::before {
+  background-image: url("../img/checkbox.svg");
+  background-size: auto;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+@media (max-width: $tablet-width) {
+  .form-feedback {
+    padding-right: 85px;
+    padding-left: 86px;
+    padding-top: 81px;
+    background-image: none;
+  }
+
+  .form-feedback__wrapper {
+    width: 100%;
+  }
+
+  .form-feedback__b {
+    font-size: 32px;
+    line-height: 45px;
+  }
+
+  .form-feedback__text {
+    margin-top: 15px;
+    margin-bottom: 55px;
+  }
+
+  .form-feedback__input {
+    margin-bottom: 44px;
+  }
+
+  .form-feedback__textarea {
+    min-height: 149px;
+  }
+}
+
+@media (max-width: $mobile-width) {
+  .form-feedback {
+    padding-left: 4.5%;
+    padding-right: 4.5%;
+    padding-top: 30px;
+  }
+
+  .form-feedback__b {
+    font-size: 28px;
+    line-height: 39px;
+  }
+
+  .form-feedback__text {
+    margin-top: 13px;
+    padding-left: 0;
+    margin-bottom: 25px;
+  }
+
+  .form-feedback__container {
+    flex-direction: column;
+    margin-bottom: 30px;
+  }
+
+  .form-feedback__input {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 33px;
+  }
+
+  .form-feedback__textarea {
+    min-height: 104px;
+    margin-left: 0;
+    padding-right: 0;
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  .form-feedback__submit {
+    width: 100%;
+    margin-left: 0;
+    margin-bottom: 22px;
+  }
+
+  .form-feedback__label {
+    width: 100%;
+  }
+}
