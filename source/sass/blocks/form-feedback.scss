@@ -13,7 +13,7 @@
 .form-feedback__wrapper {
   width: 49%;
   margin-left: auto;
-  color: #ffffff;
+  color: $white;
 }
 
 .form-feedback__b {
@@ -51,7 +51,7 @@
   font-family: $mono;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white;
 
   background-color: #19baff;
   border: none;
@@ -61,14 +61,14 @@
   font-family: $mono;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white;
 }
 
 .form-feedback__input::-moz-input-placeholder {
   font-family: $mono;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white;
 }
 
 .form-feedback__textarea {
@@ -81,7 +81,7 @@
   font-family: $mono;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white;
 
   background-color: #19baff;
   border: none;
@@ -93,7 +93,7 @@
   font-family: $mono;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white;
 }
 
 .form-feedback__textarea::-moz-input-placeholder {
@@ -102,22 +102,22 @@
   font-family: $mono;
   font-size: 16px;
   line-height: 22px;
-  color: #ffffff;
+  color: $white;
 }
 
 .form-feedback__submit {
   margin-left: 5px;
   width: 47%;
 
-  color: #ffffff;
+  color: $white;
 
   background-color: $main-color;
-  border-color: #ffffff;
+  border-color: $white;
 
   &:hover,
   &:focus {
     color: $main-color;
-    background-color: #ffffff;
+    background-color: $white;
     opacity: 1;
   }
 
@@ -151,7 +151,7 @@
     height: 16px;
     box-sizing: border-box;
 
-    border: 1px solid #ffffff;
+    border: 1px solid $white;
     cursor: pointer;
   }
 }

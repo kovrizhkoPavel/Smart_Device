@@ -20,24 +20,47 @@
   padding-left: 45px;
 
   border: 1px solid #ebebeb;
-  background-color: #ffffff;
+  background-color: $white;
   box-sizing: border-box;
+  transition-duration: 0.3s;
 
-  & svg {
+  p {
+    padding-right: 42px;
+
+    font-family: $mono;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $gray;
+  }
+
+  svg {
     position: absolute;
     top: 40px;
     left: 45px;
 
     fill: $main-color;
+    transition-duration: 0.3s;
   }
 
-  & br {
+  br {
     display: none;
   }
 
   &:hover,
   &:focus {
     background-color: $main-color;
+    transition-duration: 0.3s;
+
+    p,
+    .advantages__title {
+      color: $white;
+      transition-duration: 0.3s;
+    }
+
+    svg {
+      fill: $white;
+    }
   }
 
   &::before {
@@ -54,18 +77,6 @@
   }
 }
 
-.advantages__item:hover .advantages__title,
-.advantages__item:focus .advantages__title,
-.advantages__item:hover p,
-.advantages__item:focus p {
-  color: #ffffff;
-}
-
-.advantages__item:hover svg,
-.advantages__item:focus svg {
-  fill: #ffffff;
-}
-
 .advantages__title {
   margin-top: 96px;
   margin-bottom: 15px;
@@ -76,16 +87,6 @@
   line-height: 34px;
 
   color: $main-color;
-}
-
-.advantages__item p {
-  padding-right: 42px;
-
-  font-family: $mono;
-  font-size: 16px;
-  line-height: 22px;
-
-  color: $gray;
 }
 
 @media (max-width: $tablet-width) {
@@ -99,27 +100,29 @@
     margin-bottom: 32px;
     padding-left: 25px;
 
-    & svg {
+    svg {
       top: 22px;
       left: 27px;
     }
-  }
 
-  .advantages__item--confidentiality svg {
-    top: 27px;
+    p {
+      margin-top: 0;
+      padding-right: 21px;
+    }
 
-    width: 30px;
-    height: 26px;
+    &--confidentiality {
+      svg {
+        top: 27px;
+
+        width: 30px;
+        height: 26px;
+      }
+    }
   }
 
   .advantages__title {
     margin-top: 64px;
     margin-bottom: 11px;
-  }
-
-  .advantages__item p {
-    margin-top: 0;
-    padding-right: 21px;
   }
 }
 
@@ -137,8 +140,38 @@
     width: 100%;
     margin-bottom: 20px;
 
-    & br {
+    p {
+      margin-bottom: 23px;
+      padding-right: 17px;
+    }
+
+    br {
       display: block;
+    }
+
+    &--suppliers {
+      .advantages__title {
+        margin-top: 75px;
+      }
+
+      p {
+        padding-right: 0;
+      }
+    }
+
+    &--confidentiality {
+      min-height: 232px;
+
+      .advantages__title {
+        margin-bottom: -8px;
+        margin-top: 65px;
+      }
+    }
+
+    &--cost {
+      p {
+        padding-right: 10px;
+      }
     }
   }
 
@@ -148,33 +181,5 @@
 
     font-size: 20px;
     line-height: 28px;
-  }
-
-  .advantages__item p {
-    margin-bottom: 23px;
-    padding-right: 17px;
-  }
-
-  .advantages__item--suppliers {
-    & .advantages__title {
-      margin-top: 75px;
-    }
-
-    & p {
-      padding-right: 0;
-    }
-  }
-
-  .advantages__item--confidentiality {
-    min-height: 232px;
-
-    & .advantages__title {
-      margin-bottom: -8px;
-      margin-top: 65px;
-    }
-  }
-
-  .advantages__item--cost p {
-    padding-right: 10px;
   }
 }

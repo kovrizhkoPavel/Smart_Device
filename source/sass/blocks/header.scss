@@ -10,7 +10,7 @@
 .header__logo {
   padding-left: 20px;
 
-  & img {
+  img {
     width: 202px;
     height: 52px;
   }
@@ -36,7 +36,7 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
-  color: #ffffff;
+  color: $white;
 
   &::before {
     content: "";
@@ -73,7 +73,7 @@
   font-size: 16px;
   line-height: 18px;
   font-weight: normal;
-  color: #ffffff;
+  color: $white;
 
   &::before {
     content: "";
@@ -106,8 +106,8 @@
   margin-right: 10px;
   padding: 15px 26px;
 
-  color: #ffffff;
-  border-color: #ffffff;
+  color: $white;
+  border-color: $white;
 }
 
 @media (max-width: $tablet-width) {

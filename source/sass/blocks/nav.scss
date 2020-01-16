@@ -4,6 +4,8 @@
   min-width: 37px;
   min-height: 45px;
 
+  cursor: pointer;
+
   &::before {
     content: "";
 
@@ -14,18 +16,19 @@
     width: 37px;
     height: 1px;
 
-    background-color: #ffffff;
-    box-shadow: 0 12px 0 0 #ffffff;
+    background-color: $white;
+    box-shadow: 0 12px 0 0 $white;
+    transition-duration: 0.3s;
   }
 
   &:hover::before,
   &:focus::before {
     opacity: 0.6;
+    transition-duration: 0.3s;
   }
 
   &:active::before {
     opacity: 0.3;
+    transition-duration: 0.3s;
   }
-
-  cursor: pointer;
 }

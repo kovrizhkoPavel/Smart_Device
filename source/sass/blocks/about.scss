@@ -11,6 +11,17 @@
   background-size: 220px 317px;
   background-position: -29px 81px;
   background-repeat: no-repeat;
+
+  p {
+    padding-right: 10px;
+    margin-bottom: 21px;
+
+    font-family: $mono;
+    font-size: 16px;
+    line-height: 22px;
+
+    color: $gray;
+  }
 }
 
 .about__title {
@@ -20,17 +31,6 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
-
-  color: $gray;
-}
-
-.about p {
-  padding-right: 10px;
-  margin-bottom: 21px;
-
-  font-family: $mono;
-  font-size: 16px;
-  line-height: 22px;
 
   color: $gray;
 }
@@ -45,7 +45,7 @@
 
   &:hover,
   &:focus {
-    color: #ffffff;
+    color: $white;
     background-color: $main-color;
 
     opacity: 1;
@@ -68,6 +68,11 @@
     background-size: 251px 362px;
     background-position: -8px 21px;
     background-color: transparent;
+
+    p {
+      padding-left: 3px;
+      padding-right: 18px;
+    }
   }
 
   .about__title {
@@ -76,11 +81,6 @@
 
     font-size: 32px;
     line-height: 45px;
-  }
-
-  .about p {
-    padding-left: 3px;
-    padding-right: 18px;
   }
 
   .about__text-hidden {
@@ -103,7 +103,7 @@
 
     background-image: none;
 
-    & p {
+    p {
       padding: 0;
       margin-bottom: 40px;
     }

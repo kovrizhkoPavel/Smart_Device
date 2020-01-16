@@ -13,7 +13,7 @@
   font-weight: normal;
   line-height: 51px;
 
-  color: #ffffff;
+  color: $white;
 }
 
 .products__list {
@@ -75,9 +75,16 @@
   font-family: $roboto;
   font-size: 20px;
   line-height: 30px;
-  color: #ffffff;
+  color: $white;
 
   background-color: #27353d;
+
+  p {
+    margin: 0;
+    padding-top: 52px;
+    padding-left: 45px;
+    padding-right: 160px;
+  }
 
   &::before {
     content: "";
@@ -92,43 +99,36 @@
     opacity: 0.2;
     background-size: cover;
   }
-}
 
-.products__link--production {
-  &::before {
-    background-image: url("../img/production-desktop@1x.jpg");
+  &--production {
+    &::before {
+      background-image: url("../img/production-desktop@1x.jpg");
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/production-desktop@2x.jpg");
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/production-desktop@2x.jpg");
+      }
     }
   }
-}
 
-.products__link--mounting {
-  &::before {
-    background-image: url("../img/mounting-desktop@1x.jpg");
+  &--mounting {
+    &::before {
+      background-image: url("../img/mounting-desktop@1x.jpg");
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/mounting-desktop@2x.jpg");
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/mounting-desktop@2x.jpg");
+      }
     }
   }
-}
 
-.products__link--companent {
-  &::before {
-    background-image: url("../img/companent-desktop@1x.jpg");
+  &--companent {
+    &::before {
+      background-image: url("../img/companent-desktop@1x.jpg");
 
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/companent-desktop@2x.jpg");
+      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+        background-image: url("../img/companent-desktop@2x.jpg");
+      }
     }
   }
-}
-
-.products__link p {
-  margin: 0;
-  padding-top: 52px;
-  padding-left: 45px;
-  padding-right: 160px;
 }
 
 @media (max-width: $tablet-width) {
@@ -161,43 +161,43 @@
 
   .products__link {
     height: 256px;
-  }
 
-  .products__link p {
-    width: 24%;
-    padding-top: 40px;
-  }
+    p {
+      width: 24%;
+      padding-top: 40px;
+    }
 
-  .products__link--production {
-    &::before {
-      background-image: url("../img/production-tablet@1x.jpg");
+    &--production {
+      &::before {
+        background-image: url("../img/production-tablet@1x.jpg");
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/production-tablet@2x.jpg");
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/production-tablet@2x.jpg");
+        }
       }
     }
-  }
 
-  .products__link--mounting {
-    &::before {
-      background-image: url("../img/mounting-tablet@1x.jpg");
+    &--mounting {
+      &::before {
+        background-image: url("../img/mounting-tablet@1x.jpg");
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/mounting-tablet@2x.jpg");
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/mounting-tablet@2x.jpg");
+        }
       }
     }
-  }
 
-  .products__link--companent {
-    & p {
-      padding-top: 50px;
-    }
+    &--companent {
+      p {
+        padding-top: 50px;
+      }
 
-    &::before {
-      background-image: url("../img/companent-tablet@1x.jpg");
+      &::before {
+        background-image: url("../img/companent-tablet@1x.jpg");
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/companent-tablet@2x.jpg");
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/companent-tablet@2x.jpg");
+        }
       }
     }
   }
@@ -227,47 +227,49 @@
     margin-bottom: 30px;
   }
 
-  .products__link p {
-    width: 43%;
-    padding-top: 20px;
-    padding-left: 35px;
-  }
+  .products__link {
+    p {
+      width: 43%;
+      padding-top: 20px;
+      padding-left: 35px;
+    }
 
-  .products__link--production {
-    &::before {
-      background-image: url("../img/production-mobile@1x.jpg");
+    &--production {
+      &::before {
+        background-image: url("../img/production-mobile@1x.jpg");
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/production-mobile@2x.jpg");
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/production-mobile@2x.jpg");
+        }
       }
     }
-  }
 
-  .products__link--mounting {
-    & p {
-      width: 55%;
-    }
+    &--mounting {
+      p {
+        width: 55%;
+      }
 
-    &::before {
-      background-image: url("../img/mounting-mobile@1x.jpg");
+      &::before {
+        background-image: url("../img/mounting-mobile@1x.jpg");
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/mounting-mobile@2x.jpg");
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/mounting-mobile@2x.jpg");
+        }
       }
     }
-  }
 
-  .products__link--companent {
-    & p {
-      padding-top: 30px;
-      width: 55%;
-    }
+    &--companent {
+      p {
+        padding-top: 30px;
+        width: 55%;
+      }
 
-    &::before {
-      background-image: url("../img/companent-mobile@1x.jpg");
+      &::before {
+        background-image: url("../img/companent-mobile@1x.jpg");
 
-      @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-        background-image: url("../img/companent-mobile@2x.jpg");
+        @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+          background-image: url("../img/companent-mobile@2x.jpg");
+        }
       }
     }
   }
