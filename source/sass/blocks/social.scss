@@ -1,0 +1,45 @@
+.social {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 112px;
+}
+
+.social__item {
+  width: 27px;
+  height: 27px;
+}
+
+.social__link {
+  display: block;
+  width: 100%;
+  height: 100%;
+
+  background-repeat: no-repeat;
+  transition-duration: 0.3s;
+
+  &:hover,
+  &:focus {
+    opacity: 0.6;
+    transition-duration: 0.3s;
+  }
+
+  &:active {
+    opacity: 0.3;
+    transition-duration: 0.3s;
+  }
+
+  &--facebook {
+    background-image: url("../img/facebook.svg");
+  }
+
+  &--ok {
+    background-image: url("../img/ok.svg");
+  }
+
+  &--vk {
+    background-image: url("../img/vk.svg");
+  }
+}

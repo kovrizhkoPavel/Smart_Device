@@ -4,8 +4,6 @@
   min-width: 37px;
   min-height: 45px;
 
-  cursor: pointer;
-
   &::before {
     content: "";
 
@@ -19,6 +17,8 @@
     background-color: $white;
     box-shadow: 0 12px 0 0 $white;
     transition-duration: 0.3s;
+
+    cursor: pointer;
   }
 
   &:hover::before,
@@ -30,5 +30,59 @@
   &:active::before {
     opacity: 0.3;
     transition-duration: 0.3s;
+  }
+
+  &--footer {
+    &::before {
+      display: none;
+    }
+  }
+}
+
+.nav__list {
+  @include list-reset;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__item {
+  padding-right: 10px;
+
+  span {
+    display: block;
+
+    font-family: $mono;
+    font-size: 15px;
+    line-height: 25px;
+    color: $gray--dark;
+    opacity: 0.5;
+
+    transition-duration: 0.3s;
+
+    &:hover,
+    &:focus {
+      opacity: 1;
+      transition-duration: 0.3s;
+    }
+
+    &:active {
+      opacity: 0.3;
+      transition-duration: 0.3s;
+    }
+  }
+
+  a {
+    color: $gray--dark;
+  }
+
+  &--let-spacing {
+    letter-spacing: 0.03em;
+  }
+}
+
+@media (max-width: $tablet-width) {
+  .nav__list {
+    flex-direction: column;
   }
 }
