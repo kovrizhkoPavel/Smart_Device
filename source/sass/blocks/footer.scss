@@ -326,16 +326,16 @@
       margin-top: 28px;
       padding: 0 4.6%;
     }
+  }
 
-    &--active {
-      .nav__list {
-        display: block;
-      }
+  .footer__nav--active {
+    .nav__list {
+      display: block;
+    }
 
-      button {
-        &::after {
-          display: none;
-        }
+    button {
+      &::after {
+        display: none;
       }
     }
   }
