@@ -33,7 +33,7 @@
       <div class="main-screen__container">
         <h1 class="main-screen__title">Печатные платы</h1>
         <p class="main-screen__services">производство и монтаж, поставка комплектующих, блоков и модулей</p>
-        <a class="button main-screen__button" href="#">
+        <a class="button main-screen__button" href="#form-feedback">
           <span class="main-screen__text">
             Получить бесплатную консультацию
           </span>
@@ -52,11 +52,11 @@
           <img src="img/circuit-board-mobile@1x.png" srcset="img/circuit-board-mobile@2x.png 2x" width="301" height="220" alt="Печатные платы">
         </picture>
       </div>
-      <a href="#" class="main-screen__scroll">Скролл вниз</a>
+      <a href="#advantages" class="main-screen__scroll">Скролл вниз</a>
     </div>
   </div>
   <div class="main-wrapper">
-    <section class="advantages">
+    <section class="advantages" id="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
       <ul class="advantages__list">
         <li class="advantages__item advantages__item--deadlines advantages__item--hover">
@@ -127,15 +127,18 @@
     </section>
   </div>
   <div class="form-wrapper">
-    <form class="form-feedback" action="#" method="POST">
+    <form class="form-feedback" id="form-feedback" action="#" method="POST">
       <div class="form-feedback__wrapper">
         <h2 class="visually-hidden">Форма обратной связи</h2>
         <b class="form-feedback__b">Остались вопросы? Задайте их нам!</b>
         <p class="form-feedback__text">Мы проконсультируем Вас бесплатно</p>
         <div class="form-feedback__container">
-          <input class="form-feedback__input" type="text" name="user-name" placeholder="Имя">
-          <input class="form-feedback__input" type="tel" name="user-phone" placeholder="Телефон">
-          <textarea class="form-feedback__textarea" placeholder="Ваш вопрос"></textarea>
+          <label class="visually-hidden" for="user-name">Ваше имя</label>
+          <input class="form-feedback__input" id="user-name" type="text" name="user-name" placeholder="Имя">
+          <label class="visually-hidden" for="user-tel">Ваш телефон</label>
+          <input class="form-feedback__input" id="user-tel" type="tel" name="user-phone" placeholder="Телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18">
+          <label class="visually-hidden" for="user-message">Ваш вопрос</label>
+          <textarea class="form-feedback__textarea" id="user-message" placeholder="Ваш вопрос"></textarea>
         </div>
         <div class="form-feedback__container">
           <button class="button form-feedback__submit" type="submit">Задать вопрос</button>
