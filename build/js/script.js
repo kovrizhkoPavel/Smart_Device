@@ -7,6 +7,7 @@ var footerNav = footerInfo.querySelector('.footer__nav');
 var footerContacts = footerInfo.querySelector('.footer__container-contacts');
 var buttonNav = footerInfo.querySelector('.footer__button--nav');
 var buttonInfo = footerInfo.querySelector('.footer__button--contacts');
+var inputsTel = document.querySelectorAll('input[type=tel]');
 
 footerInfo.classList.remove('nojs');
 
@@ -44,3 +45,9 @@ if (buttonInfo) {
     footerContacts.classList.toggle('footer__container-contacts--active');
   });
 }
+
+// eslint-disable-next-line no-undef
+var im = new Inputmask('+9(999) 999-9999');
+inputsTel.forEach(function (input) {
+  im.mask(input);
+});

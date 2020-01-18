@@ -136,7 +136,7 @@
           <label class="visually-hidden" for="user-name">Ваше имя</label>
           <input class="form-feedback__input" id="user-name" type="text" name="user-name" placeholder="Имя">
           <label class="visually-hidden" for="user-tel">Ваш телефон</label>
-          <input class="form-feedback__input" id="user-tel" type="tel" name="user-phone" placeholder="Телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" />
+          <input class="form-feedback__input" id="user-tel" type="tel" name="user-phone" placeholder="Телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18"  data-inputmask-regex="[a-za-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?" />
           <label class="visually-hidden" for="user-message">Ваш вопрос</label>
           <textarea class="form-feedback__textarea" id="user-message" placeholder="Ваш вопрос"></textarea>
         </div>
@@ -222,7 +222,7 @@
         <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <div class="popup__container">
           <input class="popup__input" type="text" name="user-name" placeholder="Имя">
-          <input class="popup__input" type="tel" name="user-phone" placeholder="Телефон">
+          <input class="popup__input" type="tel" name="user-phone" placeholder="Телефон" data-inputmask-regex="[a-za-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?">
           <textarea class="popup__textarea" placeholder="Ваш вопрос"></textarea>
         </div>
         <div class="popup__container">
@@ -239,6 +239,12 @@
       <span class="visually-hidden"></span>
     </button>
   </div>
+  <script src="js/smooth-scroll.js"></script>
+  <script src="js/inputmask.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    var scrollUdvantages = new SmoothScroll('a[href*="#advantages"]');
+    var scrollForm = new SmoothScroll('a[href*="#form-feedback"]');
+  </script>
 </body>
 </html>
