@@ -4,6 +4,7 @@
   min-height: 317px;
   padding-top: 65px;
   box-sizing: border-box;
+  overflow-x: hidden;
 
   &::before {
     content: "";

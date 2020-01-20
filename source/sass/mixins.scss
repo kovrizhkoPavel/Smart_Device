@@ -4,3 +4,10 @@
 
   list-style: none;
 }
+
+@mixin font-form {
+  font-family: $mono;
+  font-size: 16px;
+  line-height: 22px;
+  color: $white;
+}

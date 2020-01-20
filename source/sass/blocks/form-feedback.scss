@@ -41,6 +41,8 @@
 }
 
 .form-feedback__input {
+  @include font-form;
+
   width: 47%;
   min-height: 50px;
   margin-left: 5px;
@@ -55,33 +57,24 @@
 
   background-color: #19baff;
   border: none;
-}
 
-.form-feedback__input::-webkit-input-placeholder {
-  font-family: $mono;
-  font-size: 16px;
-  line-height: 22px;
-  color: $white;
-}
+  &::-webkit-input-placeholder {
+    @include font-form;
+  }
 
-.form-feedback__input::-moz-input-placeholder {
-  font-family: $mono;
-  font-size: 16px;
-  line-height: 22px;
-  color: $white;
+  &::-moz-input-placeholder {
+    @include font-form;
+  }
 }
 
 .form-feedback__textarea {
+  @include font-form;
+
   width: 100%;
   min-height: 143px;
   margin-left: 5px;
   padding-left: 17px;
   padding-top: 10px;
-
-  font-family: $mono;
-  font-size: 16px;
-  line-height: 22px;
-  color: $white;
 
   background-color: #19baff;
   border: none;
@@ -90,19 +83,13 @@
 }
 
 .form-feedback__textarea::-webkit-input-placeholder {
-  font-family: $mono;
-  font-size: 16px;
-  line-height: 22px;
-  color: $white;
+  @include font-form;
 }
 
 .form-feedback__textarea::-moz-input-placeholder {
-  padding-top: 10px;
+  @include font-form;
 
-  font-family: $mono;
-  font-size: 16px;
-  line-height: 22px;
-  color: $white;
+  padding-top: 10px;
 }
 
 .form-feedback__submit {

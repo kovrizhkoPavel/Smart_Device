@@ -229,9 +229,11 @@
 
   .products__link {
     p {
-      width: 43%;
+      width: 70%;
       padding-top: 20px;
       padding-left: 35px;
+      padding-right: 0;
+      box-sizing: border-box;
     }
 
     &--production {
@@ -245,10 +247,6 @@
     }
 
     &--mounting {
-      p {
-        width: 55%;
-      }
-
       &::before {
         background-image: url("../img/mounting-mobile@1x.jpg");
 
@@ -261,7 +259,6 @@
     &--companent {
       p {
         padding-top: 30px;
-        width: 55%;
       }
 
       &::before {
