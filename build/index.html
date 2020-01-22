@@ -47,8 +47,11 @@
           <source type="image/webp" media="(min-width: 1024px)" srcset="img/circuit-board-desktop@1x.webp 1x, img/circuit-board-desktop@2x.webp 2x">
           <source type="image/webp" media="(min-width: 768px)" srcset="img/circuit-board-tablet@1x.webp 1x, img/circuit-board-tablet@2x.webp 2x">
           <source type="image/webp" srcset="img/circuit-board-mobile@1x.webp 1x, img/circuit-board-mobile@2x.webp 2x">
+            <!--1x: 705px; 2x: 1410px-->
           <source media="(min-width: 1024px)" srcset="img/circuit-board-desktop@1x.png 1x, img/circuit-board-desktop@2x.png 2x">
+            <!--1x: 465px; 2x: 930px-->
           <source media="(min-width: 768px)" srcset="img/circuit-board-tablet@1x.png 1x, img/circuit-board-tablet@2x.png 2x">
+            <!--1x: 301px; 2x: 602px-->
           <img src="img/circuit-board-mobile@1x.png" srcset="img/circuit-board-mobile@2x.png 2x" width="301" height="220" alt="Печатные платы">
         </picture>
       </div>
@@ -134,16 +137,16 @@
         <p class="form-feedback__text">Мы проконсультируем Вас бесплатно</p>
         <div class="form-feedback__container">
           <label class="visually-hidden" for="user-name">Ваше имя</label>
-          <input class="form-feedback__input" id="user-name" type="text" name="user-name" placeholder="Имя">
+          <input id="user-name" type="text" name="user-name" placeholder="Имя">
           <label class="visually-hidden" for="user-tel">Ваш телефон</label>
-          <input class="form-feedback__input" id="user-tel" type="tel" name="user-phone" placeholder="Телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" data-inputmask-regex="[a-za-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?">
+          <input id="user-tel" type="tel" name="user-phone" placeholder="Телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" data-inputmask-regex="[a-za-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?">
           <label class="visually-hidden" for="user-message">Ваш вопрос</label>
-          <textarea class="form-feedback__textarea" id="user-message" placeholder="Ваш вопрос"></textarea>
+          <textarea id="user-message" placeholder="Ваш вопрос"></textarea>
         </div>
         <div class="form-feedback__container">
           <button class="button form-feedback__submit" type="submit">Задать вопрос</button>
-          <label class="form-feedback__label">
-            <input class="form-feedback__checkbox" type="checkbox" name="subscription" checked="">
+          <label>
+            <input type="checkbox" name="subscription" checked="">
             <span class="form-feedback__element"></span>
             Я согласен на обработку персональных данных
           </label>
@@ -221,9 +224,12 @@
         <b class="popup__b">Закажите звонок</b>
         <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <div class="popup__container">
-          <input class="popup__input" type="text" name="user-name" placeholder="Имя">
-          <input class="popup__input" type="tel" name="user-phone" placeholder="Телефон" data-inputmask-regex="[a-za-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?">
-          <textarea class="popup__textarea" placeholder="Ваш вопрос"></textarea>
+          <label class="visually-hidden" for="user-name">Ваше имя</label>
+          <input class="popup__input" id="user-name" type="text" name="user-name" placeholder="Имя">
+          <label class="visually-hidden" for="user-tel">Ваш телефон</label>
+          <input class="popup__input" id="user-tel" type="tel" name="user-phone" placeholder="Телефон" data-inputmask-regex="[a-za-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?">
+          <label class="visually-hidden" for="user-message">Ваш вопрос</label>
+          <textarea class="popup__textarea" id="user-message" placeholder="Ваш вопрос"></textarea>
         </div>
         <div class="popup__container">
           <button class="button popup__submit" type="submit">Отправить</button>

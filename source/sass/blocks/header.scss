@@ -37,6 +37,7 @@
   line-height: 18px;
   font-weight: normal;
   color: $white;
+  transition-duration: 0.3s;
 
   &::before {
     content: "";
@@ -55,10 +56,12 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+    transition-duration: 0.3s;
   }
 
   &:active {
     opacity: 0.3;
+    transition-duration: 0.3s;
   }
 }
 
@@ -74,6 +77,7 @@
   line-height: 18px;
   font-weight: normal;
   color: $white;
+  transition-duration: 0.3s;
 
   &::before {
     content: "";
@@ -92,10 +96,12 @@
   &:hover,
   &:focus {
     opacity: 0.6;
+    transition-duration: 0.3s;
   }
 
   &:active {
     opacity: 0.3;
+    transition-duration: 0.3s;
   }
 }
 

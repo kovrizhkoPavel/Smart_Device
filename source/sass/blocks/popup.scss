@@ -55,7 +55,7 @@
   margin-bottom: 29px;
 }
 
-.popup__input {
+.popup__form-feedback input {
   @include font-form;
 
   width: 100%;
@@ -68,15 +68,15 @@
   border: none;
 }
 
-.popup__input::-webkit-input-placeholder {
+.popup__form-feedback input::-webkit-input-placeholder {
   @include font-form;
 }
 
-.popup__input::-moz-input-placeholder {
+.popup__form-feedback input::-moz-input-placeholder {
   @include font-form;
 }
 
-.popup__textarea {
+.popup__form-feedback textarea {
   @include font-form;
 
   width: 100%;
@@ -91,11 +91,11 @@
   resize: none;
 }
 
-.popup__textarea::-webkit-input-placeholder {
+.popup__form-feedback textarea::-webkit-input-placeholder {
   @include font-form;
 }
 
-.popup__textarea::-moz-input-placeholder {
+.popup__form-feedback textarea::-moz-input-placeholder {
   @include font-form;
 
   padding-top: 10px;
@@ -122,7 +122,7 @@
   }
 }
 
-.popup__label {
+.popup__form-feedback label {
   position: relative;
 
   width: 90%;
@@ -153,7 +153,7 @@
   }
 }
 
-.popup__checkbox:checked + .popup__element::before {
+.popup__form-feedback input[type="checkbox"]:checked + .popup__element::before {
   background-image: url("../img/checkbox.svg");
   background-size: auto;
   background-position: 50% 50%;
