@@ -33,6 +33,7 @@
 @media (max-width: $tablet-width) {
   .header-wrapper {
     min-height: 680px;
+    background-image: url("../img/black-ocen-tablet@1x.png");
   }
 
   .main-wrapper {
@@ -51,6 +52,7 @@
 @media (max-width: $mobile-width) {
   .header-wrapper {
     min-height: 647px;
+    background-image: url("../img/black-ocen-mobile@1x.png");
   }
 
   .main-wrapper {
