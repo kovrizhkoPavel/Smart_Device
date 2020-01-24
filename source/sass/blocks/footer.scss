@@ -43,6 +43,7 @@
     width: 100%;
     display: flex;
     margin-top: 71px;
+    padding-bottom: 15px;
   }
 }
 
@@ -131,7 +132,7 @@
     padding-top: 20px;
 
     &::before {
-      bottom: 10.7%;
+      bottom: 12.7%;
     }
 
     &::after {
@@ -175,8 +176,12 @@
     }
   }
 
-  .footer__social .social__item {
-    margin-top: 10px;
+  .footer__social {
+    margin-right: -6px;
+
+    .social__item {
+      margin-top: 10px;
+    }
   }
 
   .footer__copyright {
@@ -306,6 +311,7 @@
 
   .footer__social {
     margin: 0 auto;
+    padding-right: 15px;
   }
 
   .footer__title {

@@ -2,14 +2,16 @@
   @include list-reset;
 
   display: flex;
-  justify-content: space-between;
   flex-wrap: wrap;
-  width: 112px;
+  margin-left: -15px;
+  width: 130px;
 }
 
 .social__item {
   width: 27px;
   height: 27px;
+  margin-left: 15px;
+  margin-bottom: 10px;
 }
 
 .social__link {

@@ -136,12 +136,12 @@
         <b class="form-feedback__b">Остались вопросы? Задайте их нам!</b>
         <p class="form-feedback__text">Мы проконсультируем Вас бесплатно</p>
         <div class="form-feedback__container">
-          <label class="visually-hidden" for="user-name">Ваше имя</label>
-          <input id="user-name" type="text" name="user-name" placeholder="Имя">
-          <label class="visually-hidden" for="user-tel">Ваш телефон</label>
-          <input id="user-tel" type="tel" name="user-phone" placeholder="Телефон" pattern="[\+]\d{1}\s[\(]\d{3}[\)]\s\d{3}[\-]\d{2}[\-]\d{2}" minlength="18" maxlength="18" data-inputmask-regex="[a-za-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?">
-          <label class="visually-hidden" for="user-message">Ваш вопрос</label>
-          <textarea id="user-message" placeholder="Ваш вопрос"></textarea>
+          <label class="visually-hidden" for="user_name">Ваше имя</label>
+          <input id="user_name" type="text" name="user-name" placeholder="Имя" required="">
+          <label class="visually-hidden" for="user_tel">Ваш телефон</label>
+          <input id="user_tel" type="tel" name="user-phone" placeholder="Телефон" minlength="18" maxlength="18" required="">
+          <label class="visually-hidden" for="user_message">Ваш вопрос</label>
+          <textarea id="user_message" placeholder="Ваш вопрос" required=""></textarea>
         </div>
         <div class="form-feedback__container">
           <button class="button form-feedback__submit" type="submit">Задать вопрос</button>
@@ -225,11 +225,11 @@
         <p class="popup__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
         <div class="popup__container">
           <label class="visually-hidden" for="user-name">Ваше имя</label>
-          <input class="popup__input" id="user-name" type="text" name="user-name" placeholder="Имя">
+          <input class="popup__input" id="user-name" type="text" name="user-name" placeholder="Имя" required="">
           <label class="visually-hidden" for="user-tel">Ваш телефон</label>
-          <input class="popup__input" id="user-tel" type="tel" name="user-phone" placeholder="Телефон" data-inputmask-regex="[a-za-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+(?:\.[a-zA-Z0-9!#$%&'*+/=?^_`{|}~-]+)*@(?:[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?\.)+[a-zA-Z0-9](?:[a-zA-Z0-9-]*[a-zA-Z0-9])?">
+          <input class="popup__input" id="user-tel" type="tel" name="user-phone" placeholder="Телефон" required="">
           <label class="visually-hidden" for="user-message">Ваш вопрос</label>
-          <textarea class="popup__textarea" id="user-message" placeholder="Ваш вопрос"></textarea>
+          <textarea class="popup__textarea" id="user-message" placeholder="Ваш вопрос" required=""></textarea>
         </div>
         <div class="popup__container">
           <button class="button popup__submit" type="submit">Отправить</button>

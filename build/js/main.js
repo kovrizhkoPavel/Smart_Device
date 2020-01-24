@@ -78,7 +78,7 @@ if (buttonInfo) {
 }
 
 // eslint-disable-next-line no-undef
-var im = new Inputmask('+9(999) 999-9999');
+var im = new Inputmask('+7(999) 999-9999');
 inputsTel.forEach(function (input) {
   im.mask(input);
 });

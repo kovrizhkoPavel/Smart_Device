@@ -21,6 +21,9 @@
   font-size: 36px;
   font-weight: normal;
   line-height: 51px;
+  padding-top: 10px;
+
+  background-color: $main-color;
 }
 
 .form-feedback__text {
@@ -226,5 +229,9 @@
 
   .form-feedback label {
     width: 100%;
+  }
+
+  .form-feedback input[type="checkbox"] {
+    width: auto;
   }
 }
