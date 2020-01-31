@@ -2,6 +2,10 @@ html {
   box-sizing: border-box;
 }
 
+.body-popup {
+  overflow-y: hidden;
+}
+
 .visually-hidden:not(:focus),
 input[type="radio"],
 input[type="checkbox"] {

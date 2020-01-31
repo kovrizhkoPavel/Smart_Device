@@ -1,7 +1,9 @@
 'use strict';
 (function () {
-  var buttonCall = document.querySelector('.header__order-call');
-  var popup = document.querySelector('.popup');
+  var body = document.querySelector('body');
+  var buttonCall = body.querySelector('.header__order-call');
+  var popup = body.querySelector('.popup');
+  var popupBackground = popup.querySelector('.popup__background');
   var popupForm = popup.querySelector('.popup__form-feedback');
   var popupClose = popup.querySelector('.popup__button-close');
   var userName = popup.querySelector('[name=user-name]');
@@ -10,11 +12,17 @@
   var footerInfo = document.querySelector('.footer__container-info');
   var buttonNav = footerInfo.querySelector('.footer__button--nav');
   var buttonInfo = footerInfo.querySelector('.footer__button--contacts');
-  var inputsTel = document.querySelectorAll('input[type=tel]');
+  var inputsTel = body.querySelectorAll('input[type=tel]');
 
   var isStorageSupport = true;
   var storageName = '';
   var storagePhone = '';
+
+  var onPopupClick = function (evt) {
+    evt.preventDefault();
+    popup.classList.remove('popup--active');
+    body.classList.remove('body-popup');
+  };
 
   footerInfo.classList.remove('nojs');
 
@@ -29,6 +37,7 @@
     buttonCall.addEventListener('click', function (evt) {
       evt.preventDefault();
       popup.classList.add('popup--active');
+      body.classList.add('body-popup');
       if (storageName) {
         userName.value = storageName;
         userPhone.focus();
@@ -47,16 +56,16 @@
       }
     });
 
-    popupClose.addEventListener('click', function (evt) {
-      evt.preventDefault();
-      popup.classList.remove('popup--active');
-    });
+    popupClose.addEventListener('click', onPopupClick);
+
+    popupBackground.addEventListener('click', onPopupClick);
 
     window.addEventListener('keydown', function (evt) {
       if (evt.keyCode === 27) {
         if (popup.classList.contains('popup--active')) {
           evt.preventDefault();
           popup.classList.remove('popup--active');
+          body.classList.remove('body-popup');
         }
       }
     });

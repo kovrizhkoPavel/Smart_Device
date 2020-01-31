@@ -289,34 +289,6 @@
     }
   }
 
-  // .footer__container-contacts--active {
-  //   .footer__contacts {
-  //     display: block;
-  //   }
-
-  //   .footer__title {
-  //     margin-bottom: 32px;
-  //   }
-
-  //   button {
-  //     &::after {
-  //       display: none;
-  //     }
-  //   }
-  // }
-
-  // .footer__nav--active {
-  //   .nav__list {
-  //     display: block;
-  //   }
-
-  //   button {
-  //     &::after {
-  //       display: none;
-  //     }
-  //   }
-  // }
-
   .footer__logo {
     margin: 0 auto;
   }
@@ -339,6 +311,10 @@
 
     border-top: 1px solid #c4c4c4;
     border-bottom: 1px solid #c4c4c4;
+
+    &::before {
+      display: none;
+    }
 
     .nav__list {
       display: none;

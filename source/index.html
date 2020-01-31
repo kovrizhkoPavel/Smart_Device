@@ -146,7 +146,7 @@
         <div class="form-feedback__container">
           <button class="button form-feedback__submit" type="submit">Задать вопрос</button>
           <label>
-            <input type="checkbox" name="subscription" checked>
+            <input type="checkbox" name="subscription" checked required>
             <span class="form-feedback__element"></span>
             Я согласен на обработку персональных данных
           </label>
@@ -219,6 +219,7 @@
     </div>
   </footer>
   <div class="popup">
+    <div class="popup__background"></div>
     <form class="popup__form-feedback" action="#" method="POST">
       <div class="popup__wrapper">
         <b class="popup__b">Закажите звонок</b>
@@ -234,7 +235,7 @@
         <div class="popup__container">
           <button class="button popup__submit" type="submit">Отправить</button>
           <label class="popup__label">
-            <input class="popup__checkbox" type="checkbox" name="subscription" checked>
+            <input class="popup__checkbox" type="checkbox" name="subscription" checked required>
             <span class="popup__element"></span>
             Я согласен на обработку персональных данных
           </label>
